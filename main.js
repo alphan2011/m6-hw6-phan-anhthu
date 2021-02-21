@@ -17,7 +17,14 @@ for(i=0; i < box.length; i++) {
 /* When a user clicks on box #1 , have a message appear somewhere
 on the page that says “Oooh - so close, but no cigar” by
 appending a new DOM node */
+var newPara1 = document.createElement("p");
+newPara1.innerHTML = "Oooh - so close, but no cigar";
 
+var one = document.getElementById("one");
+one.addEventListener("click",
+    function() {document.getElementById("main").appendChild(newPara1);
+    }
+);
 
 /* When a user clicks on box #2 , have a message appear somewhere
 on the page that says “DING DING DING - We have a winner” by
