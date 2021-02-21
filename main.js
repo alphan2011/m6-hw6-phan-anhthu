@@ -26,6 +26,7 @@ one.addEventListener("click",
     }
 );
 
+
 /* When a user clicks on box #2 , have a message appear somewhere
 on the page that says “DING DING DING - We have a winner” by
 appending a new DOM node */
@@ -38,9 +39,18 @@ two.addEventListener("click",
     }
 );
 
+
 /* When a user clicks on box #3 , have a message appear somewhere
-on the page that says “Oops, butter luck next time” by appending
+on the page that says “Oops, better luck next time” by appending
 a new DOM node */
+var newPara3 = document.createElement("p");
+newPara3.innerHTML = "Oops, better luck next time";
+
+var three = document.getElementById("three");
+three.addEventListener("click",
+    function() {document.getElementById("main").appendChild(newPara3);
+    }
+);
 
 
 /* When any one of the three boxes are clicked , have a button
