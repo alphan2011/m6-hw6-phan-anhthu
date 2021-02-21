@@ -54,11 +54,12 @@ p {
   height: 20vh;
   padding: 3rem;
   border: 5px solid #36384c;
-  box-shadow: 5px 5px rgba(54, 56, 76, 0.1);
+  box-shadow: 5px 5px 10px rgba(54, 56, 76, 0.5);
   font-size: 7rem;
   text-align: center;
   color: #ffffff;
   margin-bottom: 3rem;
+  cursor: pointer;
 }
 
 .one {
@@ -75,4 +76,20 @@ p {
 
 .highlight {
   background-color: #19b3b1;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  padding: 1rem;
+  background-color: #19b3b1;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
 }

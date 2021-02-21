@@ -22,7 +22,9 @@ newPara1.innerHTML = "Oooh - so close, but no cigar";
 
 var one = document.getElementById("one");
 one.addEventListener("click",
-    function() {document.getElementById("main").appendChild(newPara1);
+    function() {
+        document.getElementById("main").appendChild(newPara1);
+        button[0].classList.remove("hidden");
     }
 );
 
@@ -35,7 +37,9 @@ newPara2.innerHTML = "DING DING DING - We have a winner";
 
 var two = document.getElementById("two");
 two.addEventListener("click",
-    function() {document.getElementById("main").appendChild(newPara2);
+    function() {
+        document.getElementById("main").appendChild(newPara2);
+        button[0].classList.remove("hidden");
     }
 );
 
@@ -48,7 +52,9 @@ newPara3.innerHTML = "Oops, better luck next time";
 
 var three = document.getElementById("three");
 three.addEventListener("click",
-    function() {document.getElementById("main").appendChild(newPara3);
+    function() {
+        document.getElementById("main").appendChild(newPara3);
+        button[0].classList.remove("hidden");
     }
 );
 
@@ -57,3 +63,4 @@ three.addEventListener("click",
 that says “Start Over” with an href of “index.html” appear
 somewhere on the page by removing a hidden class and
 resetting the page. */
+var button = document.getElementsByClassName("button");
