@@ -29,7 +29,14 @@ one.addEventListener("click",
 /* When a user clicks on box #2 , have a message appear somewhere
 on the page that says “DING DING DING - We have a winner” by
 appending a new DOM node */
+var newPara2 = document.createElement("p");
+newPara2.innerHTML = "DING DING DING - We have a winner";
 
+var two = document.getElementById("two");
+two.addEventListener("click",
+    function() {document.getElementById("main").appendChild(newPara2);
+    }
+);
 
 /* When a user clicks on box #3 , have a message appear somewhere
 on the page that says “Oops, butter luck next time” by appending
